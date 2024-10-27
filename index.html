@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WMS Chess Club</title>
+        <style>
+            body {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+                background-color: #f6fc9fec;
+                margin: 0;
+                padding: 0;
+            }           
+            header {
+                background-color: #333;
+                color: #55dc24ec;
+                padding: 10px 0;
+                text-align: center;
+            }
+            .logo {
+                margin-right: 15px;
+                width: 50px; /* Adjust the size of the logo */
+                height: auto;
+            }
+
+            header h1 {
+                margin: 0;
+                color: #55dc24ec;
+                text-align: left; /* Ensure the text is aligned left */
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: #b46060;
+                padding: 10px;
+            }
+            nav a {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                padding: 0 20px;
+                transition: color 0.3s ease;
+             }
+            nav a:hover {
+                color: #1d216b;
+             }
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+            .intro, .daily-puzzle, .schedule {
+                margin: 20px 0;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
+            founder, .co-founder, .description {
+                flex: 1; /* Each section will take equal space */
+                padding: 10px;
+            }
+            .founder, .co-founder {
+                max-width: 30%; /* Limit width of founder and co-founder sections */
+            }
+            .profile-pic {
+                width: 100px; /* Adjust size of the profile images */
+                height: auto;
+                border-radius: 50%;
+                margin-bottom: 10px; /* Adds space below the image */
+            }
+            p {
+                margin: 0;
+            }
+            .intro h2 {
+                margin-bottom: 20px; /* Adds space below the title */
+            }
+            .blog {
+                display: flex;
+                justify-content: space-around;
+                margin: 20px 0;
+             }
+            footer {
+                background-color: #0a2f4c;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            /* Your additional CSS for animations */
+            nav a:hover {
+                color: #ffcc00;
+                transform: scale(1.1);
+            }
+
+            .intro img, .co-founder img {
+                 animation: bounce 2s infinite;
+            }
+            .daily-puzzle img {
+                max-width: 50%; /* Ensures the image scales with the container */
+                height: auto; /* Maintains the aspect ratio */
+                display: block;
+                margin: 30px auto; /* Centers the image */
+            }
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            }
+            nav {
+                background-color: #8b3a3a;
+                color: white;
+                padding: 15px;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            section {
+                padding: 20px;
+            }
+            footer {
+                background-color: #2f4f4f;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            .button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                margin: 10px 0;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY(0);
+                }
+                40% {
+                    transform: translateY(-20px);
+                }
+                60% {
+                    transform: translateY(-10px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>WMS Chess Club</h1>
+                <img src="Images/wms.png"
+                alt="School Logo">
+        </header>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#signup">Sign Up</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="container">
+            <section id="home" class="intro">
+                <h2>Introduction</h2>
+                <div class="row">
+                    <div class="founder">
+                        <img src="founder.jpg" alt="Founder">
+                        <p><strong>Founder</strong></p>
+                        <p>My name is Kavin Rajaram. Chess has always been a passion for me. When I found out that there wasn't a chess club and team in our school, I decided to change that by creating this club. If you have any questions about me or the club, you can contact me at hcps-rajaramk@henricostudents.org</p>
+                    </div>
+                    <div class="description">
+                        <p>Welcome to the WMS Chess Club! Here you can find class schedules and other important things to boost you chess skills!</p>
+                    </div>
+                    <div class="co-founder">
+                        <img src="cofounder.jpg" alt="Co-founder">
+                        <p><strong>Co-Founder</strong></p>
+                        <p> Our Co-Founder is Dr.Gao. She is the Chinese teacher in our school (Room 2708)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="daily-puzzle">
+                <h2>Daily Puzzle</h2>
+                <p>Try solving today's puzzle!</p>
+                <p>Checkmate in 3 moves.</p>
+                <img src="Screenshot 2024-08-30 at 4.21.49 PM.png" alt="Chess Puzzle"
+            </section>
+
+            <section class="schedule">
+                <h2>Class Schedule</h2>
+                <p>Check out our upcoming chess classes and tournaments.</p>
+            
+                <!-- Calendar container -->
+                <div id="calendar">
+                    <div id="calendar-header">
+                        <button id="prevMonth">&lt;</button>
+                        <h3 id="calendarMonthYear"></h3>
+                        <button id="nextMonth">&gt;</button>
+                    </div>
+                    <div id="calendar-days">
+                        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                    </div>
+                    <div id="calendar-dates"></div>
+                </div>
+            </section>
+            
+            <style>
+                .schedule {
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
+            
+                #calendar {
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    background-color: #fff;
+                    font-family: 'Arial', sans-serif;
+                }
+            
+                #calendar-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: #333;
+                    color: #fff;
+                }
+            
+                #calendar-header button {
+                    background-color: #555;
+                    border: none;
+                    color: #fff;
+                    padding: 10px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            
+                #calendar-header button:hover {
+                    background-color: #777;
+                }
+            
+                #calendarMonthYear {
+                    font-size: 1.5em;
+                    margin: 0;
+                }
+            
+                #calendar-days {
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    background-color: #f4f4f4;
+                    text-align: center;
+                    padding: 10px 0;
+                    font-weight: bold;
+                }
+            
+                #calendar-dates {
+                    display: grid;
+                    grid-template-columns: repeat(7, 1fr);
+                    text-align: center;
+                    padding: 10px;
+                }
+            
+                #calendar-dates div {
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    min-height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            
+                #calendar-dates div.meeting {
+                    background-color: #ffc107;
+                }
+            </style>
+
+
+           
+            
+
+        <footer>
+            <p>Room 2708 - 2024 Chess Club - Contact me at hcps-rajaramk@henricostudents.org</p>
+        </footer>
+
+        <script>
+            document.querySelector("nav a[href='https://WMSChessClub.org/signup']").addEventListener("click", function(event) {
+                event.preventDefault();
+                alert("You are about to be redirected to the sign-up page!");
+                window.location.href = this.href;
+            });
+        </script>
+
+<script>
+    const calendar = document.getElementById('calendar-dates');
+    const monthYear = document.getElementById('calendarMonthYear');
+    let currentMonth = new Date().getMonth();
+    let currentYear = new Date().getFullYear();
+
+    const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+    const startDate = new Date('2024-08-19');
+    const endDate = new Date('2025-05-31');
+
+    function generateCalendar(month, year) {
+        const currentDisplayDate = new Date(year, month);
+
+        // Prevent displaying months before August 2024
+        if (currentDisplayDate < startDate) {
+            month = 7; // August (0-based index)
+            year = 2024;
+        }
+
+        const lastDateThisMonth = new Date(year, month + 1, 0);
+        
+        if (lastDateThisMonth > endDate) {
+            // If current month goes beyond May 2025, limit it to May 2025
+            month = 4; // May is the 4th index (0-based index)
+            year = 2025;
+        }
+
+        calendar.innerHTML = ""; // Clear previous calendar
+        const firstDay = new Date(year, month).getDay();
+        const daysInMonth = 32 - new Date(year, month, 32).getDate();
+
+        monthYear.textContent = `${months[month]} ${year}`;
+
+        // Generate empty squares for days before the first day of the month
+        for (let i = 0; i < firstDay; i++) {
+            calendar.innerHTML += "<div></div>";
+        }
+
+        // Generate the days of the month
+        let weekCounter = 0;
+        for (let day = 1; day <= daysInMonth; day++) {
+            const currentDate = new Date(year, month, day);
+            const currentDay = currentDate.getDay();
+
+            // Check if a new week has started
+            if (currentDay === 0 && day !== 1) { // Sunday starts a new week
+                weekCounter++;
+            }
+
+            // Determine if this day is a Chess Club Meeting day
+            let meetingClass = "";
+            if ((weekCounter === 0 || weekCounter === 2) && currentDay === 2) { // Tuesday of the 1st and 3rd week
+                meetingClass = "meeting";
+            } else if ((weekCounter === 1 || weekCounter === 3) && currentDay === 1) { // Monday of the 2nd and 4th week
+                meetingClass = "meeting";
+            }
+
+            calendar.innerHTML += `<div class="${meetingClass}">${day}<br>${meetingClass ? "Chess Club Meeting" : ""}</div>`;
+        }
+
+        // Disable "Next" button if the current month is May 2025
+        document.getElementById('nextMonth').disabled = (month === 4 && year === 2025);
+        // Disable "Prev" button if the current month is August 2024
+        document.getElementById('prevMonth').disabled = (month === 7 && year === 2024);
+    }
+
+    // Initial display starting from August 2024
+    generateCalendar(currentMonth >= 7 && currentYear >= 2024 ? currentMonth : 7, currentYear >= 2024 ? currentYear : 2024);
+
+    // Previous month button
+    document.getElementById('prevMonth').addEventListener('click', () => {
+        currentYear = currentMonth === 0 ? currentYear - 1 : currentYear;
+        currentMonth = currentMonth === 0 ? 11 : currentMonth - 1;
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    // Next month button
+    document.getElementById('nextMonth').addEventListener('click', () => {
+        currentYear = currentMonth === 11 ? currentYear + 1 : currentYear;
+        currentMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+        generateCalendar(currentMonth, currentYear);
+    });
+</script>
+</body>
+</html>
+
+    </body>
+</html>
+
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="https://WMSChessClub.org/signup" target="_blank">Sign Up</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to the Chess Club</h2>
+    <p>Learn and play chess with us!</p>
+    <p>Ready to join the Chess Club? <a href="https://docs.google.com/forms/d/e/1FAIpQLSczrA9LuHooaz8OLE08rQDldKSY-VRCEq312OGEEMyKNW33cA/viewform" target="_blank" class="button">Sign up now!</a></p>
+</section>
+
+<!-- Sign Up Section -->
+<section id="signup">
+    <h2>Sign Up</h2>
+    <p>Fill out the form below to join the Chess Club:</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSczrA9LuHooaz8OLE08rQDldKSY-VRCEq312OGEEMyKNW33cA/viewform" target="_blank" class="button">Sign Up Now</a>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Contact information or form here.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Interested in joining? <a href="https://docs.google.com/forms/d/e/1FAIpQLSczrA9LuHooaz8OLE08rQDldKSY-VRCEq312OGEEMyKNW33cA/viewform" target="_blank" style="color: #ffcc00;">Sign Up Here</a></p>
+</footer>
+
+</body>
+</html>
